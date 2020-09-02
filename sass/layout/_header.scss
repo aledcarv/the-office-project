@@ -1,0 +1,133 @@
+.header {
+    height: 100vh;
+    position: relative;
+
+    &__bar {
+        height: 15rem;
+        width: 100%;
+        background-color: rgba($color-grey-1, .9);
+    
+
+        @media screen and (max-width: 51.25em) {
+            height: 45vh;
+        }
+
+        @media screen and (max-width: 38.9375em) {
+            height: 36vh;
+        }
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 3.3rem;
+        left: 16rem;
+
+        @media screen and (max-width: 51.25em) {
+            display: block;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media screen and (max-width: 38.9375em) {
+            display: block;
+            top: 11%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__logo {
+        height: 8.5rem;
+        @media screen and (max-width:51.25em) {
+            height: 10rem;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        top: 6.3rem;
+        right: 16rem;
+
+        @media screen and (max-width:51.25em) {
+            top: 33%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media screen and (max-width:38.9375em) {
+            top: 28%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__ul {
+        list-style: none;
+    }
+    
+    &__li {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+
+        @media screen and (max-width:51.25em) { 
+            &:not(:last-child) { 
+                margin-right: none; 
+            } 
+            display: block; 
+            text-align: center; 
+        }
+    }
+
+    &__a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $color-grey-2;
+
+        @media screen and (max-width:51.25em) {
+            font-size: 3rem;
+        }
+
+        @media screen and (max-width:44.375em) {
+            font-size: 2.6rem;
+        }
+
+        @media screen and (max-width:40.5em) {
+            font-size: 2rem;
+        }
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 30rem;
+        left: 16rem;
+        width: 38%;
+
+        @media screen and (max-width:73.9em) {
+            top: 24rem;
+        }
+
+        @media screen and (max-width:64.56em) {
+            top: 19rem;
+            width: 50%;
+        }
+
+        @media screen and (max-width:51.25em) {
+            display: block;
+            top: 72%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+
+        @media screen and (max-width:38.9375em) {
+            display: block;
+            top: 68%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+    }
+}

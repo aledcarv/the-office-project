@@ -1,0 +1,15 @@
+.info-char {
+    width: 60%;
+    margin: 0 auto;
+
+    &__box {
+        width: 100%;
+        height: 60%;
+    }
+    
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

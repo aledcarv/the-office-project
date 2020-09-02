@@ -1,0 +1,36 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-2;
+}
+
+.heading-primary {
+    color: $color-grey-1;
+    text-align: center;
+    font-size: 3.7rem;
+    transition: all .3s ease;
+    cursor: default;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.text-area:hover > .heading-secondary {
+    border-bottom: .6rem solid $color-grey-2;
+}
+
+.heading-secondary {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: .6rem solid transparent;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+
+.general-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+}

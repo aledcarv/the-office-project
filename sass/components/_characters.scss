@@ -1,0 +1,57 @@
+.characters {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+
+    &__box {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        box-shadow: 0 2rem 4rem rgba($color-black, .3);
+        overflow: hidden;
+        margin: 1rem;
+    }
+
+    &__figure {
+        height: 100%;
+        width: 100%;
+        @include posAbsCenter;
+    }
+
+    &__img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transition: all .3s ease;
+        backface-visibility: hidden;
+    }
+
+    &__title {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        text-align: center;
+        color: $color-white;
+        line-height: 1.7;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-shadow: rgba($color-black, .5);
+        transition: all .3s ease;
+        backface-visibility: hidden;
+    }
+
+    &__figure:hover &__title {
+        opacity: 1;
+        @include posAbsCenter;
+    }
+
+    &__figure:hover &__img {
+        filter: blur(4px);
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,26 @@
+@mixin posAbsCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media screen and (max-width: 37.5em) { @content };
+    }
+
+    @if $breakpoint == tab-port {
+        @media screen and (max-width: 56.25) { @content };
+    }
+
+    @if $breakpoint == tab-land {
+        @media screen and (max-width: 75em) { @content };
+    }
+}

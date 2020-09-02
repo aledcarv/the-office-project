@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-port) {
+        font-size: 50%; 
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+
+    @media screen and (max-width: 38.9375em) {
+        width: 74.8rem;
+    }
+}
+
+::selection {
+    background-color: $color-grey-3;
+    color: $color-white;
+}

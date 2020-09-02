@@ -1,0 +1,21 @@
+.row {
+    max-width: 100rem;
+    margin: 0 auto;
+    @include clearfix;
+    
+    &:not(:last-child) {
+            margin-bottom: 8rem;
+    }
+}
+    
+[class^='col-'] {
+    float: left;
+
+    &:not(:last-child) {
+        margin-right: 8rem;
+    }
+}
+
+.col-1-2 {
+    width: calc((100% - 8rem) / 2);
+}
