@@ -7,7 +7,7 @@
   </ul>
   
   <h1>Not completed yet 🚧</h1>
-  <p>Stuff like the Dunder Mifflin page and the description of each characters still on process.</p>
+  <p>Stuff like the Dunder Mifflin page and the description of each characters still in process.</p>
   
   <h1>Tools 🛠</h1>
   <p>I used SASS with a little bit of vanilla Js.</p>
