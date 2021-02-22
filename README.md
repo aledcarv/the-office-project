@@ -10,4 +10,4 @@
   <p>The Dunder Mifflin page and the description of each character still in process.</p>
   
   <h1>Tools 🛠</h1>
-  <p>I used SASS with a little bit of vanilla Js.</p>
+  <p>I used SASS and vanilla Js.</p>
